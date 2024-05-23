@@ -1,0 +1,65 @@
+.nav {
+  display: flex;
+  justify-content: center;  
+  font-family: 'PT Sans', regular;
+  font-weight: 700;
+  font-size: 28px;
+  overflow: hidden;
+  background-color:#FEFFFB ;
+  padding: 20px 10px;
+  /* position: fixed; */
+  
+   
+  }
+
+  /* Стиль ссылок шапки */
+  .nav a {
+    float: left;
+    color: #3D4233;
+    text-align: center;
+    padding: 27px 17px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    
+  }
+  
+  /* Стиль ссылки логотипа */
+  .nav a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Изменение цвета фона при наведении курсора */
+  .nav a:hover {
+    background-color: #3D4233;
+    color: #FEFFFB;
+    
+  }
+  
+  /* Стиль активной/текущей ссылки
+  .nav a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+   */
+  /* Сдвигаем секцию со ссылками вправо */
+  .nav-right {
+    float: right;
+    box-shadow: 1px 14px 14px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Медиа-запрос для адаптивности – когда ширина
+    экрана 650px или меньше, ссылки будут друг над другом */
+  @media screen and (max-width: 650px) {
+    .nav a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .nav-right {
+      float: none;
+    }
+  }
+  

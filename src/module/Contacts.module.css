@@ -1,0 +1,100 @@
+.block {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    transform: translateY(-600px);
+  }
+  
+  .image {
+    float: left;
+    width: 40%;
+    border-radius: 11px;
+    padding-right: 60px;
+    padding-top: 30px;
+    margin-top: 50px;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  /* Заголовок */
+  .title {
+    transform: translate(50%, -50%);
+    float: center;
+    font-size: 28px;
+    margin-bottom: 60px;
+    color: #3d4233;
+    font-family: PT Sans;
+    font-weight: bold;
+    padding-top: 4px;
+    margin-top: 20px;
+  }
+  
+  /* Текст */
+  .text {
+    font-size: 23px;
+    font-family: PT Sans;
+    color: #3d4233;
+    line-height: 1.5;
+    margin-left: 70px;
+  }
+  
+  /* Кнопка */
+  .button {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #6c755a;
+    border-radius: 11px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    box-shadow: 1px 14px 14px rgba(0, 0, 0, 0.2);
+    margin-top: 155px;
+    width: 40%;
+    height: 500%;
+    text-decoration: none;
+    margin-right: 55px;
+  }
+  
+  .button a {
+    color: #6c755a;
+  }
+  
+  .button button:hover {
+    background-color: #eee;
+  }
+  
+  .button a.activeLink {
+    color: #6c755a;
+  }
+  
+  /* Адаптивность */
+  @media screen and (max-width: 768px) {
+    .block {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image {
+      width: 100%;
+    }
+  
+    .content {
+      width: 100%;
+      padding: 10px;
+    }
+  }
