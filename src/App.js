@@ -20,6 +20,7 @@ const App = (props) => {
       <div className='app-wrapper'>
         <div className='app-cont'>
           <Routes>
+            **<Route path='/' element={<Start />} />**
             <Route path='/start' element={<Start />} />
             <Route path='/about' element={<About />} />
             <Route path='/services' element={<Services />} />

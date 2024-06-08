@@ -22,7 +22,7 @@ const Act = () => {
                     </ul>
                 </p>
                     <NavLink to="/Action" className={styles.button}>Узнать подробнее об акциях</NavLink>
-                {/* ВСТАВИТЬ ССЫЛКУ */}
+               
             </div>
         </div>
     );
