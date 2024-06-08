@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Nav from "../components/Nav";
 import Form from "../components/Form";
-import s from "../module/Start.module.css";
+import s from "../module/pages/Start.module.css";
 import logoSvg from "../img/logo.svg";
 import chatSvg from "../img/chat.svg";
 import tgSvg from "../img/tg.svg";
@@ -38,11 +38,7 @@ const Start = () => {
           <NavLink to="#">Олива-Мед в телеграмм</NavLink>
           {/* ВСТАВИТЬ ССЫЛКУ */}
         </button>
-        <button type="submit">
-          <img src={chatSvg} alt="Чат" />
-          <NavLink to="#">Чат с менеджером</NavLink>
-          {/* ВСТАВИТЬ ССЫЛКУ */}
-        </button>
+       
       </div>
       <div className={s.action}>
         <Act />

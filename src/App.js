@@ -1,8 +1,9 @@
 import logoSvg from '../src/img/logo.svg';
 import './App.css';
 import Start from './pages/Start';
-
+import Services from "./pages/Services";
 import About from './pages/About';
+import Action from './pages/Action';
 
 import Nav from './components/Nav';
 import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'react-router-dom';
@@ -15,6 +16,8 @@ const App = (props) => {
           <Routes>
             <Route path='/start' element={<Start />} />
             <Route path='/about' element={<About />} />
+            <Route path='/services' element={<Services />} />
+            <Route path='/action' element={<Action />} />
           </Routes>
         </div>
       </div>
@@ -22,22 +25,5 @@ const App = (props) => {
   );
 };
 
-  // function App() {
-  //   return (
-  //     <div className= {App}> 
-  //         <Nav />
-  //         <BrowserRouter>
-
-  //           <Routes>
-  //             <Route path  = "/start" component = {Start} />
-  //             <Route path = "/home" component = {Home} />
-  //             <Route path = "/about" component = {About} />
-  //           </Routes>
-
-  //         </BrowserRouter>
-  //     </div>
-  // );
-
-  // }
 
   export default App;

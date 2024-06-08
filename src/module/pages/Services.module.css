@@ -1,0 +1,37 @@
+.services {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+  }
+  
+  .services h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .service-item {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .service-item h2 {
+    margin-bottom: 10px;
+  }
+  
+  .service-item p {
+    font-size: 16px;
+    color: #777;
+  }

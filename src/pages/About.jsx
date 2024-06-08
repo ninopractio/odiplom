@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Nav from "../components/Nav";
 import Form from "../components/Form";
-import s from "../module/About.module.css";
+import s from "../module/pages/About.module.css";
 import logoSvg from "../img/logo.svg";
 import chatSvg from "../img/chat.svg";
 import tgSvg from "../img/tg.svg";

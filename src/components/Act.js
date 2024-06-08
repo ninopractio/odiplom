@@ -21,7 +21,7 @@ const Act = () => {
                         <li>отличное настроение.</li>
                     </ul>
                 </p>
-                    <NavLink to="#" className={styles.button}>Узнать подробнее об акциях</NavLink>
+                    <NavLink to="/Action" className={styles.button}>Узнать подробнее об акциях</NavLink>
                 {/* ВСТАВИТЬ ССЫЛКУ */}
             </div>
         </div>

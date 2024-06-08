@@ -13,6 +13,8 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 147px 206px 103px 250px;
+    margin-top: -430px; 
+
   }
   
   .footer_nav {
