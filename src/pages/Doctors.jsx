@@ -1,23 +1,19 @@
 import React, { useState, useEffect } from "react";
 import Nav from "../components/Nav";
 import Form from "../components/Form";
-import s from "../module/pages/Action.module.css";
-import logoSvg from "../img/logo.svg";
-import chatSvg from "../img/chat.svg";
-import tgSvg from "../img/tg.svg";
-import { NavLink } from "react-router-dom";
+import s from "../module/pages/Doctors.module.css";
 import Vrachi from "../components/Vrachi";
 import Services from "../components/Services";
 import Contacts from "../components/Contacts";
 import Act from "../components/Act";
 import Footer from "../components/Footer";
-import ActdocPng from "../img/actdoc.png";
 
 
-const Action = () => {
+
+const Doctors = () => {
 
     return (
-        
+
         <section className="container">
             <Nav />
             <div className={s.block}>
@@ -33,9 +29,6 @@ const Action = () => {
                     Акции клиники "Олива-Мед" направлены на то, чтобы сделать медицинскую помощь более доступной и привлекательной для всех. Клиника стремится предоставлять качественные медицинские услуги по доступным ценам, помогая пациентам улучшить свое здоровье и благополучие.
                 </div>
             </div>
-            {/* <div className={s.image}>
-                <img src ={ActdocPng} alt = "ДОКАКЦИЙ"></img>
-            </div> */}
             <div className={s.services}>
                 <Act />
             </div>
@@ -56,4 +49,4 @@ const Action = () => {
     );
 };
 
-export default Action;
+export default Doctors;

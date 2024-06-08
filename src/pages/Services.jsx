@@ -36,6 +36,7 @@
 // export default Services;
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Nav from '../components/Nav';
 // import logo from './logo.svg';
 import '../module/pages/Services.module.css';
 
@@ -58,6 +59,7 @@ function Services() {
 
   return (
     <div className="App">
+      <Nav />
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>

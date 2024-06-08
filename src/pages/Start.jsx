@@ -35,7 +35,7 @@ const Start = () => {
       <div className={s.butt}>
         <button type="submit">
           <img src={tgSvg} alt="Telegram" />
-          <NavLink to="#">Олива-Мед в телеграмм</NavLink>
+          <NavLink to="https://t.me/+oD3nDVRTY2kzZTVi">Олива-Мед в телеграмм</NavLink>
           {/* ВСТАВИТЬ ССЫЛКУ */}
         </button>
        

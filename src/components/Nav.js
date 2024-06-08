@@ -13,14 +13,13 @@ const Nav = () => {
                     <NavLink to='/about'>О КЛИНИКЕ</NavLink>
                     <NavLink to='/action'>АКЦИИ</NavLink>
                     <NavLink to='/services'>УСЛУГИ</NavLink>
-                    <NavLink to='/slabo'>ВРАЧИ</NavLink>
-                    <NavLink to='#'>ВАКАНСИИ</NavLink>
-                    <NavLink to='#'>КОНТАКТЫ</NavLink>
-                    <NavLink to='#'>ВОПРОС-ОТВЕТ</NavLink>
-                   
+                    <NavLink to='/doctors'>ВРАЧИ</NavLink>
+                    <NavLink to='/vacanc'>ВАКАНСИИ</NavLink>
+                    <NavLink to='/kontakt'>КОНТАКТЫ</NavLink>
+                    <NavLink to='/vopros'>ВОПРОС-ОТВЕТ</NavLink>   
                 </div> 
                 <div className='kab'>
-                    <NavLink to='#'> ЛИЧНЫЙ КАБИНЕТ</NavLink>
+                    <NavLink to='/profile'> ЛИЧНЫЙ КАБИНЕТ</NavLink>
                 </div>
             </div>
 
