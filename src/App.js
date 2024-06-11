@@ -6,7 +6,7 @@ import About from './pages/About';
 import Action from './pages/Action';
 import Doctors from './pages/Doctors';
 import Vacanc from './pages/Vacanc';
-import Nav from './components/Nav';
+import Politika from './pages/Politika';
 import Kontakt from './pages/Kontakt';
 import Vopros from './pages/Vopros';
 import Profile from './pages/Profile';
@@ -21,6 +21,7 @@ const App = (props) => {
         <div className='app-cont'>
           <Routes>
             **<Route path='/' element={<Start />} />**
+            <Route path='/politika' element={<Politika />} />
             <Route path='/start' element={<Start />} />
             <Route path='/about' element={<About />} />
             <Route path='/services' element={<Services />} />

@@ -1,70 +1,34 @@
-.services {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-  }
-  
-  .services h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .services-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .service-item {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-  }
-  
-  .service-item h2 {
-    margin-bottom: 10px;
-  }
-  
-  .service-item p {
-    font-size: 16px;
-    color: #777;
-  }
-  .container{
-    display: flex;
-    
-}
-.block{
-    display: flex;
-    background-color: #FEFFFB;
-    float: center;
-
-}
-.textosn{
-    padding-left: 60px;
-    padding-right: 700px;
-    font-weight: 700;
-    font-size: 20px;
-    font-family: PT Sans;
-    line-height: 1.7; 
-    padding-bottom: 20px;
-    color: #6C755A;
+.serviceBlock {
+  background-color: #98fb98;
+  border-radius: 11px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
 }
 
-.services{
-  
-    margin-top: 600px;
-    
-}
-.image {
-    
-    float: right;
-    margin-left: 20px;
-    width: 40px;
-   height: 40px;
+@media (max-width: 768px) {
+  .serviceBlock {
+    width: calc(100% - 2rem);
   }
+}
+
+.serviceName {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.servicePrice {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.signupButton {
+  background-color: #c5e1c5;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}

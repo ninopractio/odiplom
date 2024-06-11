@@ -59,7 +59,7 @@ const Form = () => {
             <textarea id="comment" name="comment" placeholder="Комментарий" value={formData.comment} onChange={handleChange}></textarea>
             <div className={s.silk}>
             <label>
-                <input type="checkbox" /> Согласен с <NavLink to='#'>политикой конфиденциальности</NavLink>  
+                <input type="checkbox" /> Согласен с <NavLink to='/politika'>политикой конфиденциальности</NavLink>  
                 {/* ВСТАВИТЬ ССЫЛКУ */}
             </label>
                 </div>

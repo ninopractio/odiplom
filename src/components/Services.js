@@ -6,6 +6,7 @@ import prawPng from '../img/praw.png';
 
 const Services = () => {
   return (
+    <section>
     <div className={styles.block}>
       <h2 className={styles.title}>УСЛУГИ</h2>
       <div className={styles.imageAndText}>
@@ -40,6 +41,7 @@ const Services = () => {
       </div>
       <p className={styles.bottomText}>Вы можете записаться на необходимую услугу с помощью удобной формы.</p>
     </div>
+    </section>
   );
 };
 
