@@ -24,7 +24,7 @@ const Contacts = () => {
               
             </p>
             <NavLink to="/about" className={styles.button}>Узнать больше о клинике</NavLink>
-            {/* ВСТАВИТЬ ССЫЛКУ */}
+            
           </div>
         </div>
       );

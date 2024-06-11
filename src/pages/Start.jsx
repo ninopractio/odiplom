@@ -52,9 +52,11 @@ const Start = () => {
       <div>
          <Contscts />
       </div>
-     <footer>
+     
+      <div classname = {s.foot}>
       <Footer />
-     </footer>
+      </div>
+     
         
       
     </section>

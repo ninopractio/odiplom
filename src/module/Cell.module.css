@@ -3,14 +3,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #008000;
-    color: #00FF00;
+    background-color: #6C755A;
+    color: #F5F5F5;
+    font-family: PT Sans;
+    font-weight: 700;
     padding: 16px;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
-    flex: 1 0 25%;
-    margin: 8px;
+    font-size: 20px;
+    flex: 1 0 20%;
+    width: 350px;
+    margin: 20px;
   }
   
   @media (max-width: 1024px) {
@@ -20,31 +24,31 @@
     }
   }
   
-  .Сell:hover {
-    background-color: #006400;
+  .Cell:hover {
+    background-color: #404538;
   }
   
-  .Сell__title {
+  .Cell__title {
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 8px;
   }
   
-  .Сell__price {
+  .Cell__price {
     font-size: 1.1rem;
     margin-bottom: 16px;
   }
   
-  .Сell__button {
-    background-color: #00FF00;
+  .Cell__button {
+    background-color: #F5F5F5;
     color: #000000;
     padding: 8px 16px;
-    border-radius: 5px;
+    border-radius: 11px;
     text-decoration: none;
     cursor: pointer;
   }
   
-  .Сell__button:hover {
-    background-color: #00E600;
+  .Cell__button:hover {
+    background-color: #F5F5F5;
   }
   
