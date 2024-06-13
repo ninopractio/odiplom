@@ -3,6 +3,7 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import s from '../module/pages/Politika.module.css';
 import Contacts from '../components/Contacts';
+import Footer2 from '../components/Footer2';
 
 const Politika = () => {
 
@@ -83,7 +84,7 @@ const Politika = () => {
                 </div>
 
             </div>
-           
+           <Footer2 />
         </section>
     );
 };

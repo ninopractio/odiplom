@@ -14,14 +14,15 @@ const services = [
   { title: 'УЗИ фолликулогенеза', price: '600 руб.' },
   { title: 'УЗИ фолликулогенеза', price: '600 руб.' },
   { title: 'УЗИ фолликулогенеза', price: '600 руб.' },
-  { title: 'УЗИ фолликулогенеза', price: '600 руб.' },
+  { title: 'УЗИ фолликулогенеза', price: '600 руб.' }, 
 ];
 
 const Services = () => {
   return (
-    <section className = {s.container}>
+    
+    <section className = {s.cont}>
       <Nav />
-      <div>
+      <div className = {s.container}>
       {services.map((service) => (
         <Cell key={service.title} title={service.title} price={service.price} link="/form" />
       ))}
