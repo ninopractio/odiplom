@@ -1,17 +1,21 @@
 .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: #FEFFFB;
   border-radius: 11px;
+  align-items: center;
   padding: 1rem;
   flex: 0 0 25%;   
   margin: 1rem;
-  width: 100%;
+  /* width: 100%; */
 }
 .services {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 
 
 @media (max-width: 768px) {
@@ -29,6 +33,7 @@
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
+
 
 .signupButton {
   background-color: #c5e1c5;

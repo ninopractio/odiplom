@@ -17,12 +17,12 @@ export const Footer = () => {
         <nav className={styles.footer_nav}>
           <ul className={styles.footer_menu}>
             <li className={styles.footer_item}>
-            <Link to="/catalog" className={styles.footer_link}>
-                  О клинике
-                </Link>
+              <Link to="/catalog" className={styles.footer_link}>
+                О клинике
+              </Link>
             </li>
             <li className={styles.footer_item}>
-            <Link to="/services" className={styles.footer_link}>
+              <Link to="/services" className={styles.footer_link}>
                 Услуги
               </Link>
             </li>
@@ -53,34 +53,34 @@ export const Footer = () => {
                 Пациентам
               </Link>
             </li>
-            
+
           </ul>
         </nav>
 
         <div className={styles.footer_adress}>
-          <a href="tel:+7 999 999 99 99" className={styles.footer_tel}>
-            +7 999 999 99 99
+          <a href="tel:+7 988 255 5077" className={styles.footer_tel}>
+            +7 988 255 5077
           </a>
-          <a href="tel:+7 999 999 99 99" className={styles.footer_tel}>
-            +7 999 999 99 99
+          <a href="улица Зорге 16/190" className={styles.footer_tel}>
+            улица Зорге 16/190
           </a>
           <a
             className={styles.footer_mail}
-            href="mailto:olivamed@yandex.ru"
+            href="mailto:olivamedeco@gmail.com"
           >
-            olivamed@yandex.ru
+            olivamedeco@gmail.com
           </a>
           <div className={styles.ico_link}>
-          
-              {/* <a href="https://t.me/SingaService" className={styles.footer_ico_link}> 
+
+            {/* <a href="https://t.me/SingaService" className={styles.footer_ico_link}> 
               {/* ВСТАВИТЬ ССЫЛКУ */}
-                {/* <img src={tg} alt="telegramm" className={styles.footer_ico} /> */}
-              
-              <a href="https://t.me/SingaService" className={styles.footer_ico_link}> 
+            {/* <img src={tg} alt="telegramm" className={styles.footer_ico} /> */}
+
+            <a href="https://t.me/SingaService" className={styles.footer_ico_link}>
               {/* ВСТАВИТЬ ССЫЛКУ */}
-                <img src={play} alt="app-mobile" className={styles.footer_ico} />
-              </a>
-           
+              <img src={play} alt="app-mobile" className={styles.footer_ico} />
+            </a>
+
           </div>
         </div>
       </div>

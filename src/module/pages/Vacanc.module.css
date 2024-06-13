@@ -1,33 +1,49 @@
-.container{
+.container {
     display: flex;
-    
-}
-.block{
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: #FEFFFB;
-    float: center;
-
-}
-.textosn{
-    padding-left: 60px;
-    padding-right: 700px;
-    font-weight: 700;
-    font-size: 20px;
-    font-family: PT Sans;
-    line-height: 1.7; 
-    padding-bottom: 20px;
-    color: #6C755A;
-}
-
-.services{
-  
-    margin-top: 600px;
-    
-}
-.image {
-    
-    float: right;
-    margin-left: 20px;
-    width: 40px;
-   height: 40px;
+    border-radius: 11px;
+    align-items: center;
+    padding: 1rem;
+    flex: 0 0 25%;   
+    margin: 1rem;
+    /* width: 100%; */
   }
+  .vacancii {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .serviceBlock {
+      width: calc(100% - 2rem);
+    }
+  }
+  
+  .vacanciaName {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .vacanciaPrice {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  
+  .signupButton {
+    background-color: #c5e1c5;
+    
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+  }
+  

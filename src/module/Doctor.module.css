@@ -1,0 +1,57 @@
+.Cell {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #6C755A;
+    color: #F5F5F5;
+    font-family: PT Sans;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    flex: 0 0 25%;
+    width: 350px;
+    margin: 20px;
+    
+  }
+  
+  @media (max-width: 1024px) {
+    .Cell {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .Cell:hover {
+    background-color: #404538;
+  }
+  
+  .Cell__title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  
+  .Cell__price {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+  
+  .Cell__button {
+    background-color: #F5F5F5;
+    color: #000000;
+    padding: 8px 16px;
+    border-radius: 11px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .Cell__button:hover {
+    background-color: #F5F5F5;
+  }
+  
