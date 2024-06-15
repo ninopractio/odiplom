@@ -1,20 +1,19 @@
-import React, { useState } from "react";
+import React from 'react';
+import styles from '../module/Modal.module.css';
 
-const Modal = ({ children, fullscreen, onClose }) => {
-  const [isOpen, setIsOpen] = useState(true);
+const Modal = ({ isOpen, onClose, children }) => {
+  if (!isOpen) return null;
 
-  const handleClose = () => {
-    setIsOpen(false);
-  };
-
-//   return isOpen ? (
-//     <div className={`modal ${fullscreen ? "modal-fullscreen" : ""}`}>
-//       <div className="modal-content">
-//         <button className="modal-close-button" onClick={handleClose}>&times;</button>
-//         {children}
-//       </div>
-//     </div>
-//   ) : null;
+  return (
+    <div className={styles.modal}>
+      <div className={styles.modal_content}>
+        <span className={styles.close_button} onClick={onClose}>
+          &times;
+        </span>
+        {children}
+      </div>
+    </div>
+  );
 };
 
 export default Modal;
