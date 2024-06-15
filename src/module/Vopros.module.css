@@ -1,0 +1,73 @@
+.Vopros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #6C755A;
+    color: #F5F5F5;
+    font-family: PT Sans;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 11px;
+    text-align: center;
+    font-size: 20px;
+    flex: 0 0 95%;
+    margin: 15px;
+  }
+  
+  @media (max-width: 1024px) {
+    .Vopros {
+      /* flex-direction: column;
+      flex-wrap: wrap;
+      flex: 0 0 95%; */
+    }
+  }
+  
+  
+  .Vopros__title {
+    font-weight: bold;
+    color: #252721;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .Vopros__opis {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .Vopros__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .Vopros__input {
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-right: 8px;
+  }
+  
+  .Vopros__button {
+    background-color: #F5F5F5;
+    color: #000000;
+    padding: 8px 16px;
+    border-radius: 11px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .Vopros__button:hover {
+    background-color: #e0e0e0;
+  }
+  
