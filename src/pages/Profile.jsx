@@ -1,3 +1,4 @@
+// Profile.js
 import React, { useState } from 'react';
 import { Routes, Route, Link, Navigate } from 'react-router-dom';
 import Register from '../components/Register';
