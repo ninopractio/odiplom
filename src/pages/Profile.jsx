@@ -1,52 +1,47 @@
-import React, { useState, useEffect } from "react";
-import Nav from "../components/Nav";
-import Form from "../components/Form";
-import s from "../module/pages/Kontakt.module.css";
-import Vrachi from "../components/Vrachi";
-import Services from "../components/Services";
-import Contacts from "../components/Contacts";
-import Act from "../components/Act";
-import Footer from "../components/Footer";
+import React, { useState } from 'react';
+import { Routes, Route, Link, Navigate } from 'react-router-dom';
+import Register from '../components/Register';
+import Login from '../components/Login';
+import Dashboard from '../components/Dashboard';
+import Appointments from '../components/Appointments';
+import ChangePassword from '../components/ChangePassword';
+import styles from '../module/pages/Profile.module.css';
 
+const Profile = () => {
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
 
+    const handleLogin = () => {
+        setIsAuthenticated(true);
+    };
 
-const Kontakt = () => {
+    const handleLogout = () => {
+        setIsAuthenticated(false);
+    };
 
     return (
-
-        <section className="container">
-            <Nav />
-            <div className={s.block}>
-                <div className={s.textosn}>
-                    Клиника "Олива-Мед" регулярно проводит акции, направленные на повышение доступности медицинских услуг и улучшение здоровья населения. Эти акции включают:<br></br>
-
-
-                    • Скидки на медицинские услуги: скидки на широкий спектр медицинских услуг, включая консультации специалистов и диагностические процедуры.<br></br>
-                    • Бесплатные консультации: Клиника проводит бесплатные консультации по различным медицинским вопросам, включая профилактику заболеваний, лечение хронических заболеваний и здоровый образ жизни.<br></br>
-                    • Семейные скидки: Клиника предлагает семейные скидки, позволяя семьям экономить на медицинских услугах.<br></br>
-                    • Социальные скидки: Клиника предоставляет скидки социально незащищенным слоям населения, таким как пенсионеры, инвалиды и малоимущие.<br></br>
-
-                    Акции клиники "Олива-Мед" направлены на то, чтобы сделать медицинскую помощь более доступной и привлекательной для всех. Клиника стремится предоставлять качественные медицинские услуги по доступным ценам, помогая пациентам улучшить свое здоровье и благополучие.
-                </div>
-            </div>
-            <div className={s.services}>
-                <Act />
-            </div>
-
-            <div className={s.contacts}>
-                <Contacts />
-            </div>
-            <div><Footer /></div>
-
-
-
-
-
-
-
-
-        </section>
+        <div className={styles.profileContainer}>
+            <header className={styles.header}>
+                <h1>Личный кабинет</h1>
+                {isAuthenticated ? (
+                    <button onClick={handleLogout} className={styles.button}>Выйти</button>
+                ) : (
+                    <nav className={styles.nav}>
+                        <Link to="/login" className={styles.navLink}>Войти</Link>
+                        <Link to="/register" className={styles.navLink}>Регистрация</Link>
+                    </nav>
+                )}
+            </header>
+            
+            <Routes>
+                <Route path="/register" element={<Register />} />
+                <Route path="/login" element={<Login onLogin={handleLogin} />} />
+                <Route path="/dashboard" element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />} />
+                <Route path="/appointments" element={isAuthenticated ? <Appointments /> : <Navigate to="/login" />} />
+                <Route path="/change-password" element={isAuthenticated ? <ChangePassword /> : <Navigate to="/login" />} />
+                <Route path="/" element={isAuthenticated ? <Navigate to="/dashboard" /> : <Navigate to="/login" />} />
+            </Routes>
+        </div>
     );
 };
 
-export default Kontakt;
+export default Profile;
