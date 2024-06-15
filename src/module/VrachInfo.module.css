@@ -1,0 +1,31 @@
+/* VrachInfo.module.css */
+
+.container {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.info {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.info p {
+    color: #333;
+    margin: 8px 0;
+}
+
+p{
+    color: #333;
+    text-align: left; 
+    margin-left: 36px;
+}
