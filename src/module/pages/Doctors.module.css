@@ -1,16 +1,9 @@
 .container{
-    display: flex;
-    
-}
-.block{
-    display: flex;
-    background-color: #FEFFFB;
-    float: center;
-
+    display: flex;   
 }
 .textosn{
     padding-left: 60px;
-    padding-right: 700px;
+    padding-right: 60px;
     font-weight: 700;
     font-size: 20px;
     font-family: PT Sans;
@@ -19,15 +12,11 @@
     color: #6C755A;
 }
 
-.services{
-  
-    margin-top: 600px;
-    
-}
+
 .image {
     
     float: right;
     margin-left: 20px;
     width: 40px;
-   height: 40px;
+    height: 40px;
   }

@@ -1,15 +1,36 @@
+import React, { useState } from 'react';
 import styles from '../module/Doctor.module.css';
-import React from "react";
-import { Link } from "react-router-dom";
+import Modal from './Modal';
+import VrachInfo from './VrachInfo';
 
-const Doctor = ({ title, price, link }) => {
+const Doctor = ({ title, opis, image }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
-    <div className={styles.Cell}>
-      <div className={styles.Cell__title}>{title}</div>
-      <div className={styles.Cell__price}>{price}</div>
-      <Link to="/form" className={styles.Cell__button}>Записаться</Link>
+    <div className={styles.Doctor}>
+      <div className={styles.Doctor__info}>
+        {image && <img src={image} alt={title} className={styles.Doctor__image} />}
+        <div className={styles.Doctor__text}>
+          <div className={styles.Doctor__opis}>{opis}</div>
+          <div className={styles.Doctor__title}>{title}</div>
+        </div>
+      </div>
+      <button className={styles.Doctor__button} onClick={handleOpenModal}>
+        Подробнее
+      </button>
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+        <VrachInfo />
+      </Modal>
     </div>
   );
-}
+};
 
 export default Doctor;

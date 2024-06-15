@@ -1,52 +1,45 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Nav from "../components/Nav";
-import Form from "../components/Form";
-import s from "../module/pages/Doctors.module.css";
-import Vrachi from "../components/Vrachi";
-import Services from "../components/Services";
-import Contacts from "../components/Contacts";
-import Act from "../components/Act";
-import Footer from "../components/Footer";
+import s from "../module/pages/Services.module.css";
+import Doctor from '../components/Doctor';
+import Footer2 from "../components/Footer2";
 
+const doctors = [
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    { title: 'Киселев Алексей Евгеньевич', opis: 'Офтальмолог', image: require('../img/doc.svg').default },
+    
 
+];
 
 const Doctors = () => {
-
-    return (
-
-        <section className="container">
-            <Nav />
-            <div className={s.block}>
-                <div className={s.textosn}>
-                    Клиника "Олива-Мед" регулярно проводит акции, направленные на повышение доступности медицинских услуг и улучшение здоровья населения. Эти акции включают:<br></br>
-
-
-                    • Скидки на медицинские услуги: скидки на широкий спектр медицинских услуг, включая консультации специалистов и диагностические процедуры.<br></br>
-                    • Бесплатные консультации: Клиника проводит бесплатные консультации по различным медицинским вопросам, включая профилактику заболеваний, лечение хронических заболеваний и здоровый образ жизни.<br></br>
-                    • Семейные скидки: Клиника предлагает семейные скидки, позволяя семьям экономить на медицинских услугах.<br></br>
-                    • Социальные скидки: Клиника предоставляет скидки социально незащищенным слоям населения, таким как пенсионеры, инвалиды и малоимущие.<br></br>
-
-                    Акции клиники "Олива-Мед" направлены на то, чтобы сделать медицинскую помощь более доступной и привлекательной для всех. Клиника стремится предоставлять качественные медицинские услуги по доступным ценам, помогая пациентам улучшить свое здоровье и благополучие.
-                </div>
-            </div>
-            <div className={s.services}>
-                <Act />
-            </div>
-
-            <div className={s.contacts}>
-                <Contacts />
-            </div>
-            <div><Footer /></div>
-
-
-
-
-
-
-
-
-        </section>
-    );
+  return (
+    <section className={s.cont}>
+      <Nav />
+      <div className={s.container}>
+        {doctors.map((doctor) => (
+          <Doctor key={doctor.title} title={doctor.title} opis={doctor.opis} image={doctor.image} />
+        ))}
+      </div>
+      <Footer2 />
+    </section>
+  );
 };
 
 export default Doctors;

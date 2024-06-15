@@ -1,57 +1,105 @@
-.Cell {
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #6C755A;
-    color: #F5F5F5;
-    font-family: PT Sans;
-    font-weight: 700;
-    padding: 16px;
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 20px;
-    flex: 0 0 25%;
-    width: 350px;
-    margin: 20px;
-    
-  }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cont {
+  padding: 20px;
+}
+
+.Doctor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #6C755A;
+  color: #F5F5F5;
+  font-family: PT Sans;
+  font-weight: 700;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  /* width: 350px; */
   
-  @media (max-width: 1024px) {
-    .Cell {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-  }
+  width: calc(33.333% - 40px); /* Ширина каждого элемента */
+  margin: 20px; /* Отступы для каждого элемента */
+  box-sizing: border-box; 
+}
+
+.Doctor__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Doctor__image {
+  width: 100px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.Doctor__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Doctor__opis {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  float: left;
+  color:#252721;
+  font-size: 25px;
+  text-align: center;
+}
+
+.Doctor__title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  float: left;
+  text-align: center;
+}
+
+.Doctor__button {
+  background-color: #F5F5F5;
+  color: #000000;
+  padding: 8px 16px;
+  border-radius: 11px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: PT Sans;
+  width: 50%;
+  height: 30%;
+  font-size: 20px;
+  font-family: PT Sans;
+  margin-left:156px ;
   
-  .Cell:hover {
-    background-color: #404538;
+}
+
+.Doctor__button:hover {
+  background-color: #F5F5F5;
+}
+
+@media (max-width: 1024px) {
+  .Doctor {
+      width: 100%;
+      margin: 10px 0;
   }
-  
-  .Cell__title {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 8px;
+
+  .Doctor__info {
+      flex-direction: column;
+      align-items: center;
   }
-  
-  .Cell__price {
-    font-size: 1.1rem;
-    margin-bottom: 16px;
+
+  .Doctor__image {
+      margin-bottom: 10px;
   }
-  
-  .Cell__button {
-    background-color: #F5F5F5;
-    color: #000000;
-    padding: 8px 16px;
-    border-radius: 11px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .Cell__button:hover {
-    background-color: #F5F5F5;
-  }
-  
+}

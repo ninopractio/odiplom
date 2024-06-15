@@ -15,8 +15,12 @@
   cursor: pointer;
   font-size: 20px;
   flex: 0 0 25%;
-  width: 350px;
-  margin: 20px;
+/*   
+  width: calc(33.333% - 40px); 
+    margin: 20px;
+    box-sizing: border-box;  
+  */
+  
   
 }
 

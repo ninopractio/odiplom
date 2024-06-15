@@ -52,7 +52,7 @@ const Formvac = () => {
             <textarea id="comment" name="comment" placeholder="Укажите специальность" value={formData.comment} onChange={handleChange}></textarea>
             <div className={s.silk}>
             <label>
-                <input type="checkbox" /> Согласен с <NavLink to='/politika'>политикой конфиденциальности</NavLink>  
+                <input type="checkbox" /><NavLink to='/politika'>Согласен с политикой конфиденциальности</NavLink>  
             </label>
                 </div>
             <button type="submit">Откликнуться</button>
