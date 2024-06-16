@@ -5,8 +5,9 @@
     display: flex;
     background-color: #6C755A;
     float: center;
+    
 }
-.textosn{
+.textosn p{
     padding-left: 60px;
     padding-right: 70px;
     font-size: 23px;
@@ -16,4 +17,27 @@
 }
 .services{
     margin-top: 600px;
+}
+@media screen and (max-width: 768px) {
+    .block {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .textosn p{
+        font-size: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        line-height: 1.5; 
+    }
+  
+    .content {
+      width: 100%;
+      padding: 10px;
+    }
+  
+     .content {
+    width: 100%;
+    padding: 10px;
+  }
 }

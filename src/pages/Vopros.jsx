@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import Nav from "../components/Nav";
 import s from "../module/pages/Vopros.module.css";
 import Vopros from '../components/Vopros';

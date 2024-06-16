@@ -1,54 +1,54 @@
 .start{
-    background-color: #FEFFFB;
-    display: flex;
-    flex-wrap: wrap;
-   
-}
-.p{
+  background-color: #FEFFFB;
+  display: flex;
+  flex-wrap: wrap;
+  
+  }
+  .p{
   font-family: 'PT Sans', regular;
   font-weight: 700;
   font-size: 80px;
   color: #3D4233;
   padding-top: 80px;
-}
-
-.podz{
+  }
+  
+  .podz{
   font-family: 'PT Sans', regular;
   font-weight: bold;
   font-size: 35px;
   color: #666A5E;
   padding-top: 10px;
   padding-left: 80px;
-}
-.start, .aside{
-    width: 100%;
-     min-height: 1px;
-}
-.aside{
+  }
+  .start, .aside{
+  width: 100%;
+  min-height: 1px;
+  }
+  .aside{
   float: right;
   
-}
-.picture{
-    width: 273px;
-    height: 277px;
-    padding-top: auto;
-}
-.aside, .start {
-    width: 100%;
-    min-height: 1px;
-}
-
-.butt {
+  }
+  .picture{
+  width: 273px;
+  height: 277px;
+  padding-top: auto;
+  }
+  .aside, .start {
+  width: 100%;
+  min-height: 1px;
+  }
+  
+  .butt {
   display: flex;
   justify-content: center;
-  gap: 1rem;  
-}
-
-.butt button {
+  gap: 1rem;
+  }
+  
+  .butt button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;  
+  gap: 0.5rem;
   padding: 0.5rem 1rem;
   border: 1px solid #6C755A;
   border-radius: 11px;
@@ -58,121 +58,84 @@
   margin-top: 95px;
   width: 384px;
   text-decoration: none;
-}
-.butt a {
+  }
+  .butt a {
   color: #6C755A;
-}
-.butt button:hover {
+  }
+  .butt button
+  {
   background-color: #eee;
-}
-
-.butt button img {
+  }
+  
+  .butt button img {
   width: 46px;
   height: 49x;
-}
-
-.butt a.activeLink {
+  }
+  
+  .butt a.activeLink {
   color: #6C755A;
-}
-.con_act {
+  }
+  .con_act {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background-color: #6C755A;
-}
-
-@media (min-width: 992px) {
-  /* Стили для экранов с шириной не менее 992px */
-
-  .aside {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    order: 1;
-    float: right;
-    /* margin-left: 80px;  */
-    /* Добавьте это свойство */
-    transform: translateY(-400px);
-    padding-right: 50px;
-    margin: 0 auto;
-   
-  }
-
-  .start {
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
-    order: 2;
-    
   }
   
-}
-@media (min-width: 1400px) {
-  /* Стили для экранов с шириной не менее 1400px */
-
+  @media (min-width: 992px) {
+  /* Стили для экранов с шириной не менее 992px */
+  
   .aside {
-    flex: 0 0 25%;
-    max-width: 25%;
-    float: right;
-    margin-bottom: 300px;
-    
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  order: 1;
+  float: right;
+  
+ 
+  transform: translateY(-400px);
+  padding-right: 50px;
+  margin: 0 auto;
   }
-
+  
   .start {
-    flex: 0 0 75%;
-    max-width: 75%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+  order: 2;
+  
   }
-}
-@media screen and (max-width: 768px) {
-  /* .block {
-    flex-direction: column;
-    align-items: center;
-  } */
-
+  
+  }
+  @media (min-width: 1400px) {
+  /* Стили для экранов с шириной не менее 1400px */
+  
+  .aside {
+  flex: 0 0 25%;
+  max-width: 25%;
+  float: right;
+  margin-bottom: 300px;
+  
+  }
+  
+  .start {
+  flex: 0 0 75%;
+  max-width: 75%;
+  }
+  }
+  @media screen and (max-width: 768px) {
+  
   .picture{
-    width: 80%;
-    padding-top: auto;
+  width: 80%;
+  padding-top: auto;
   }
   .p{
-    font-size: 25px;
-    margin-left: 80px;
-    padding-top: 80px;
+  font-size: 25px;
+  margin-left: 80px;
+  padding-top: 80px;
   }
   .podz{
-    font-size: 15px;
-    padding-bottom:25px ;
-   
+  font-size: 15px;
+  padding-bottom:25px ;
+  
   }
-}
-
-
- 
-
- 
-
-.app__main-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.app__main-container > *:not(:last-child) {
-  margin-bottom: 50px;
-}
-
-.item-1 {
-  background-color: cornflowerblue;
-}
-.item-2 {
-  background-color: coral;
-}
-.item-3 {
-  background-color: darkseagreen;
-}
-
-.item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  height: 100%;
-  width: 100%;
-}
+} 

@@ -1,12 +1,4 @@
-
-import s from '../module/Footer.module.css'
-import { NavLink } from 'react-router-dom'
-import tg from "../img/tg.svg";
-import play from "../img/playmarket.png";
-
-
 import React, { useState, useEffect } from "react";
-
 import styles from "../module/Footer2.module.css";
 import { Link } from "react-router-dom";
 
@@ -69,18 +61,7 @@ export const Footer2 = () => {
           >
             olivamedeco@gmail.com
           </a>
-          <div className={styles.ico_link}>
-          
-              {/* <a href="https://t.me/SingaService" className={styles.footer_ico_link}> 
-              {/* ВСТАВИТЬ ССЫЛКУ */}
-                {/* <img src={tg} alt="telegramm" className={styles.footer_ico} /> */}
-              
-              <a href="https://t.me/SingaService" className={styles.footer_ico_link}> 
-              {/* ВСТАВИТЬ ССЫЛКУ */}
-                <img src={play} alt="app-mobile" className={styles.footer_ico} />
-              </a>
-           
-          </div>
+      
         </div>
       </div>
     </footer>

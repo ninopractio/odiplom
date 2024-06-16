@@ -1,5 +1,4 @@
 .footer {
-    /* background-image: url(../svg/footer_bg.svg); */
     
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
@@ -173,7 +172,15 @@
   
   @media (max-width: 769px) {
     .footer_wrapper {
-      padding: 60px 100px 40px 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+     
+      margin-top: -360px; 
+      
+      padding: 50px 100px 30px 100px;
+    
+  
     }
   
     .footer_link {
@@ -224,6 +231,17 @@
     .footer_mail {
       font-size: 10px;
       margin-bottom: 6px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .footer_wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0;
+      /* padding: 147px 206px 103px 250px; */
+      margin-top: -550px; 
+  
     }
   }
   

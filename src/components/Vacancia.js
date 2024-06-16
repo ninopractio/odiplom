@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from '../module/Vacancia.module.css';
-import { Link } from "react-router-dom";
 import Formvac from './Formvac';
 import Modal from './Modal';
 

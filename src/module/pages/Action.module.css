@@ -34,3 +34,25 @@
 .ul{
     padding-left: 50px;
 }
+@media screen and (max-width: 768px) {
+    .block {
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .title{
+      font-size: 25px;
+      padding-left: 280px;
+      margin-top: 20px;
+      
+    }
+    .textosn p {
+     display: none;
+    }
+    .textosn li{
+        font-size: 15px;
+    }
+  
+  
+   
+  }

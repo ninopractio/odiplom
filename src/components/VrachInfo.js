@@ -52,7 +52,7 @@ const VrachInfo = () => {
         }
     };
 
-    const handleOverlayClick = (e) => {
+    const handleOverlayClick = (e) => {    //обработчик событий. нажатие на фон = закрытие формы
         if (e.target === e.currentTarget) {
             setIsModalOpen(false);
         }
@@ -87,7 +87,7 @@ const VrachInfo = () => {
             {isModalOpen && (
                 <div className={s.modalOverlay} onClick={handleOverlayClick}>
                     <div className={s.modalContent} ref={modalRef}>
-                        {/* <button className={s.closeButton} onClick={() => setIsModalOpen(false)}>×</button> */}
+                       
                         <form onSubmit={handleSubmit}>
                             <h1>ЗАПИСАТЬСЯ НА ПРИЕМ</h1>
                             

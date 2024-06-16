@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Nav from "../components/Nav";
-import Form from "../components/Form";
 import s from "../module/pages/Kontakt.module.css";
-import Vrachi from "../components/Vrachi";
-import Services from "../components/Services";
 import Contacts from "../components/Contacts";
 import Act from "../components/Act";
 import Footer from "../components/Footer";
@@ -42,12 +39,6 @@ const Kontakt = () => {
                 <Contacts />
             </div>
             <div><Footer /></div>
-
-
-
-
-
-
 
 
         </section>

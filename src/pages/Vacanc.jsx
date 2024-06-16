@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import Nav from "../components/Nav";
 import s from "../module/pages/Vacanc.module.css";
 import Vacancia from '../components/Vacancia';

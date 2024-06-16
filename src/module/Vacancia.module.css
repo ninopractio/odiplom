@@ -1,6 +1,5 @@
 .Vacancia {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -64,4 +63,24 @@
   .Vacancia__button:hover {
     background-color: #F5F5F5;
   }
+  @media screen and (max-width: 768px) {
+    .Vacancia_opis{
+   font-size: 15px;
+   }
+   .Vacancia__title{
+    font-size: 25px;
+   }
+    .Vacancia__button {
+      margin-top: 20px;
+     align-items: center;
+     width: auto;
+     height: auto;
+      font-size: 10px;
+      font-family: PT Sans;
+    }
+    .Vacancia{
+      width: auto;
+    }
+  }
+  
   

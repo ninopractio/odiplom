@@ -38,14 +38,7 @@
     list-style-type: none;
     padding: 0;
   }
-  
-  /* .column li::before {
-    content: url(../img/icon.svg);
-    margin-right: 15px;
-    line-height: 2.5;
-    position: absolute;
-    top: 50px;
-    transform: translateY(500px) scale(0.9); */
+
 
   .bottomText {
     text-align: center;
@@ -95,8 +88,6 @@
     ;
   }
   
-
-  
   .bottomText {
     text-align: center;
     margin-top: 30px;
@@ -109,5 +100,18 @@
   @media screen and (max-width: 768px) {
     .columns {
       flex-direction: column;
+    }
+    .imageAndText{
+      display: none;
+    }
+    .title{
+      font-size: 20px;
+      padding-left: 5px;
+    }
+    .column{
+      font-size: 12px;
+    }
+    .bottomText{
+      font-size: 12px;
     }
   }

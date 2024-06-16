@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import Nav from "../components/Nav";
 import Form from "../components/Form";
 import s from "../module/pages/Start.module.css";
-import logoSvg from "../img/logo.svg";
-import chatSvg from "../img/chat.svg";
 import tgSvg from "../img/tg.svg";
 import { NavLink } from "react-router-dom";
 import Act from "../components/Act";
@@ -11,11 +9,10 @@ import Services from "../components/Services";
 import Vrachi from "../components/Vrachi";
 import Contscts from "../components/Contacts";
 import Footer from "../components/Footer";
+import logoSvg from '../img/logo.svg';
 
-
-  
 const Start = () => {
- 
+
   return (
     <section className="container">
       <Nav />
@@ -37,27 +34,28 @@ const Start = () => {
           <img src={tgSvg} alt="Telegram" />
           <NavLink to="https://t.me/+oD3nDVRTY2kzZTVi">Олива-Мед в телеграмм</NavLink>
         </button>
-       
+
+
       </div>
       <div className={s.action}>
         <Act />
       </div>
       <div>
-        <Services/>
+        <Services />
       </div>
       <div >
         <Vrachi />
       </div>
       <div>
-         <Contscts />
+        <Contscts />
       </div>
-     
-      <div classname = {s.foot}>
-      <Footer />
+
+      <div classname={s.foot}>
+        <Footer />
       </div>
-     
-        
-      
+
+
+
     </section>
   );
 };

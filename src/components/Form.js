@@ -50,7 +50,6 @@ const Form = () => {
             <div className={s.silk}>
             <label>
                 <input type="checkbox" /> Согласен с <NavLink to='/politika'>политикой конфиденциальности</NavLink>  
-                {/* ВСТАВИТЬ ССЫЛКУ */}
             </label>
                 </div>
             <button type="submit">Отправить</button>

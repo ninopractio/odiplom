@@ -20,10 +20,9 @@ const Vrachi = () => {
             <li>поддерживается идеальная чистота;</li>
             <li>новейшее оборудование и техника.</li>
           </ul>
-          <p className={styles.text}>Вы можете ознакомиться с подробным списком врачей</p>
+          <p className={styles.textniz}>Вы можете ознакомиться с подробным списком врачей</p>
         </p>
-        <NavLink to="#" className={styles.button}>Перейти к списку врачей</NavLink>
-        {/* ВСТАВИТЬ ССЫЛКУ */}
+        <NavLink to="/Doctors" className={styles.button}>Перейти к списку врачей</NavLink>
       </div>
     </div>
   );

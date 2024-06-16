@@ -13,7 +13,7 @@ const Contacts = () => {
           <div className={styles.content}>
             <h2 className={styles.title}>КОНТАКТЫ</h2>
             <p className={styles.text}>
-              График работы:
+              <p>График работы:</p>
               <ul>
                 <li>пн-вс с 08:00 до 20:00</li>
                 <li>г.Ростов-на-Дону, ул.Зорге, 16/190</li>

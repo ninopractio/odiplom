@@ -84,6 +84,10 @@
       flex-direction: column;
       align-items: center;
     }
+    .title{
+      font-size: 25px;
+      padding-left: 150px;
+    }
     .text {
       font-size: 20px;
       font-family: PT Sans;
@@ -92,10 +96,11 @@
     }
   
     .image {
-      width: 25%;
-      border-radius: 11px;
+     display: none;
     }
-  
+    .button{
+      padding: auto;
+    }
     .content {
       width: 100%;
       padding: 10px;
