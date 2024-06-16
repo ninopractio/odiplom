@@ -81,21 +81,7 @@
   align-items: center;
   background-color: #6C755A;
 }
-/* .Carousel {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-/* @media (max-width: 768px) {
-  flex-direction: column;
-  align-items: center;
-} */
-/* .actions {
-  margin-top: -2500px; 
-}
-  */
+
 @media (min-width: 992px) {
   /* Стили для экранов с шириной не менее 992px */
 
@@ -109,8 +95,7 @@
     transform: translateY(-400px);
     padding-right: 50px;
     margin: 0 auto;
-    /* ДОПИСАТЬ АДАПТИВКУ ЕБУЧУЮ
-    font-size для оливы */
+   
   }
 
   .start {
@@ -137,6 +122,33 @@
     max-width: 75%;
   }
 }
+@media screen and (max-width: 768px) {
+  /* .block {
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .picture{
+    width: 80%;
+    padding-top: auto;
+  }
+  .p{
+    font-size: 25px;
+    margin-left: 80px;
+    padding-top: 80px;
+  }
+  .podz{
+    font-size: 15px;
+    padding-bottom:25px ;
+   
+  }
+}
+
+
+ 
+
+ 
+
 .app__main-container {
   display: flex;
   flex-direction: column;

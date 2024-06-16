@@ -36,7 +36,6 @@ const Start = () => {
         <button type="submit">
           <img src={tgSvg} alt="Telegram" />
           <NavLink to="https://t.me/+oD3nDVRTY2kzZTVi">Олива-Мед в телеграмм</NavLink>
-          {/* ВСТАВИТЬ ССЫЛКУ */}
         </button>
        
       </div>

@@ -29,3 +29,146 @@ p{
     text-align: left; 
     margin-left: 36px;
 }
+.reviewsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .reviewsContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .review {
+        flex: 0 0 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .reviewsContainer {
+        justify-content: space-around;
+    }
+
+    .review {
+        flex: 0 0 30%;
+    }
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.silk {
+    margin-top: 10px;
+}
+
+.silk label {
+    display: flex;
+    align-items: center;
+}
+
+.silk label input[type="checkbox"] {
+    margin-right: 8px;
+}
+/* VrachInfo.module.css */
+
+.reviewsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .reviewsContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .review {
+        flex: 0 0 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .reviewsContainer {
+        justify-content: space-around;
+    }
+
+    .review {
+        flex: 0 0 30%;
+    }
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.silk {
+    margin-top: 10px;
+}
+
+.silk label {
+    display: flex;
+    align-items: center;
+}
+
+.silk label input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* Разрешить прокрутку */
+}
+
+.modalContent {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Разрешить прокрутку внутри модального окна */
+    max-height: 90vh; /* Ограничить высоту модального окна */
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}

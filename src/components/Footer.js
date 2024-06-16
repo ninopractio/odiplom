@@ -17,7 +17,7 @@ export const Footer = () => {
         <nav className={styles.footer_nav}>
           <ul className={styles.footer_menu}>
             <li className={styles.footer_item}>
-              <Link to="/catalog" className={styles.footer_link}>
+              <Link to="/about" className={styles.footer_link}>
                 О клинике
               </Link>
             </li>
@@ -27,30 +27,30 @@ export const Footer = () => {
               </Link>
             </li>
             <li className={styles.footer_item}>
-              <Link to="/about" className={styles.footer_link}>
+              <Link to="/Doctors" className={styles.footer_link}>
                 Врачи
               </Link>
-              {/* ВСТАВИТЬ ССЫЛКУ */}
+            
             </li>
 
             <li className={styles.footer_item}>
-              <Link to="/contact" className={styles.footer_link}>
+              <Link to="/Kontakt" className={styles.footer_link}>
                 Контакты
               </Link>
             </li>
             <li className={styles.footer_item}>
-              <Link to="/contact" className={styles.footer_link}>
+              <Link to="/Vacanc" className={styles.footer_link}>
                 Вакансии
               </Link>
             </li>
             <li className={styles.footer_item}>
-              <Link to="/contact" className={styles.footer_link}>
+              <Link to="/Vopros" className={styles.footer_link}>
                 Вопрос-Ответ
               </Link>
             </li>
             <li className={styles.footer_item}>
-              <Link to="/feedback" className={styles.footer_link}>
-                Пациентам
+              <Link to="/Action" className={styles.footer_link}>
+                Акции
               </Link>
             </li>
 
@@ -77,8 +77,7 @@ export const Footer = () => {
             {/* <img src={tg} alt="telegramm" className={styles.footer_ico} /> */}
 
             <a href="https://t.me/SingaService" className={styles.footer_ico_link}>
-              {/* ВСТАВИТЬ ССЫЛКУ */}
-              <img src={play} alt="app-mobile" className={styles.footer_ico} />
+              
             </a>
 
           </div>

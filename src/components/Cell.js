@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from '../module/Cell.module.css';
-import { Link } from 'react-router-dom';
 import Modal from './Modal';
 import Form from './Form';
 

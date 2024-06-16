@@ -58,9 +58,11 @@
       float: none;
       display: block;
       text-align: left;
+      font-size: 10px;
     }
     .nav-right {
       float: none;
     }
   }
+  
   

@@ -67,28 +67,7 @@
     margin-right: 55px;
     
   }
-  /* .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: PT Sans;
-    font-weight: bold;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #6C755A;
-    text-decoration: none;
-    float: right;
-    border: 1px solid #6C755A;
-    border-radius: 11px;
-    background-color: #F5F5F5;
-    cursor: pointer;
-    box-shadow: 1px 14px 14px rgba(0, 0, 0, 0.2);
-    margin-top: 95px;
-    width: 384px;
-    text-decoration: none;
-    margin-bottom: 35px;
-    margin-right: 30px;
-  } */
+
   .button a {
     color: #6C755A;
   }
@@ -105,9 +84,16 @@
       flex-direction: column;
       align-items: center;
     }
+    .text {
+      font-size: 20px;
+      font-family: PT Sans;
+      color: #F8FDEE;
+      line-height: 1.5;
+    }
   
     .image {
-      width: 100%;
+      width: 25%;
+      border-radius: 11px;
     }
   
     .content {

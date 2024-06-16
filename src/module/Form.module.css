@@ -102,3 +102,26 @@ form {
  .silk a.activeLink {
     color: darkred;
 }
+@media screen and (max-width: 768px) {
+  .h1{
+    font-size: 20px;
+  }
+  .h2{
+    font-size: 18px;
+  }
+
+  .picture{
+    width: 80%;
+    padding-top: auto;
+  }
+  .p{
+    font-size: 25px;
+    margin-left: 80px;
+    padding-top: 80px;
+  }
+  .podz{
+    font-size: 15px;
+    padding-bottom:25px ;
+   
+  }
+}

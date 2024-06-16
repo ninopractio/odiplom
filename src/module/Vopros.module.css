@@ -15,7 +15,9 @@
     flex: 0 0 95%;
     margin: 15px;
   }
-  
+  .p{
+    text-align: center;
+  }
   @media (max-width: 1024px) {
     .Vopros {
       /* flex-direction: column;
@@ -23,7 +25,12 @@
       flex: 0 0 95%; */
     }
   }
-  
+  .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
   
   .Vopros__title {
     font-weight: bold;

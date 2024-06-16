@@ -17,7 +17,7 @@ export const Footer2 = () => {
         <nav className={styles.footer_nav}>
           <ul className={styles.footer_menu}>
             <li className={styles.footer_item}>
-            <Link to="/catalog" className={styles.footer_link}>
+            <Link to="/about" className={styles.footer_link}>
                   О клинике
                 </Link>
             </li>
@@ -27,29 +27,28 @@ export const Footer2 = () => {
               </Link>
             </li>
             <li className={styles.footer_item}>
-              <Link to="/about" className={styles.footer_link}>
+              <Link to="/doctors" className={styles.footer_link}>
                 Врачи
               </Link>
-              {/* ВСТАВИТЬ ССЫЛКУ */}
             </li>
 
             <li className={styles.footer_item}>
-              <Link to="/contact" className={styles.footer_link}>
+              <Link to="/kontakt" className={styles.footer_link}>
                 Контакты
               </Link>
             </li>
             <li className={styles.footer_item}>
-              <Link to="/contact" className={styles.footer_link}>
+              <Link to="/vacanc" className={styles.footer_link}>
                 Вакансии
               </Link>
             </li>
             <li className={styles.footer_item}>
-              <Link to="/contact" className={styles.footer_link}>
+              <Link to="/vopros" className={styles.footer_link}>
                 Вопрос-Ответ
               </Link>
             </li>
             <li className={styles.footer_item}>
-              <Link to="/feedback" className={styles.footer_link}>
+              <Link to="/action" className={styles.footer_link}>
                 Акции
               </Link>
             </li>
